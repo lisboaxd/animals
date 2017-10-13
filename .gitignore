@@ -1,6 +1,6 @@
-dea/
+.idea/
 
 
 #extensions
 *.pyc
-settings.py
+settings_desenv.py
