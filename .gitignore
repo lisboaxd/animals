@@ -3,3 +3,4 @@ dea/
 
 #extensions
 *.pyc
+settings.py
