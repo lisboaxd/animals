@@ -9,13 +9,12 @@ class Dashboard(View):
 
     def get(self,request, *args, **kwargs):
         return render(request,
-                      'core/index.html',
+                      'core/formulario.html',
                       context={
                           'title': 'ola mundo',
                           'cabecalho': 'Titulo do cabecalho',
                           'form': CadastroPet()
-                      },
-                      status=201
+                      }
                       )
 
     def post(self,request):
