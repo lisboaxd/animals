@@ -22,8 +22,8 @@ class Pet(models.Model):
     cor = models.CharField(max_length=20,choices=CORES)
     castrado = models.BooleanField()
     sexo = models.CharField(max_length=1,choices=SEXO)
-    raca = models.ForeignKey('Raca',related_name='pk',parent_link='nome')
-    especie = models.ForeignKey('Especie')
+    raca = models.ForeignKey('core.Raca',verbose_name=u'raça')
+    especie = models.ForeignKey('core.Especie',verbose_name=u'espécie')
 
     def __str__(self):
         return self.nome
